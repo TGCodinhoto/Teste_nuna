@@ -86,17 +86,18 @@
     <main>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
-            <!-- Card 1 -->
-            <a id="carrinho" href="./trvl.html" class="relative group w-full cursor-pointer">
-                <div class="relative overflow-hidden">
-                    <img alt="#" class="w-full object-cover transition-opacity duration-300" src="./img/grid1.jpg"
-                        width="400" />
 
+            <!-- Card 1 -->
+            <a class="relative group w-full cursor-pointer" href="./trvl.html" id="carrinho">
+                <div class="relative overflow-hidden">
+                    <img alt="A stylish baby stroller in a modern setting"
+                        class="w-full object-cover transition-opacity duration-300" height="300"
+                        src="https://storage.googleapis.com/a1aa/image/UcoV_oYqoE9UEf218YirkThlpKAFaXMpJ-48gR3WtT0.jpg"
+                        width="400" />
                     <!-- Efeito de escurecer a imagem -->
                     <div
                         class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300">
                     </div>
-
                     <!-- Container do texto que aparece ao passar o mouse -->
                     <div
                         class="absolute inset-0 flex items-end justify-center bg-gradient-to-t to-transparent opacity-0 group-hover:opacity-80 transition-opacity duration-300 p-6">
@@ -109,6 +110,15 @@
                             </p>
                         </div>
                     </div>
+                </div>
+                <!-- Descrição fixa para mobile -->
+                <div class="block md:hidden bg-white p-4">
+                    <h1 class="text-xl font-bold">
+                        TRVL™
+                    </h1>
+                    <p>
+                        Carrinho de bebê
+                    </p>
                 </div>
             </a>
 
