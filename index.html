@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>
-        Singular Baby + Nuna
+        Singular + Nuna
     </title>
     <script src="https://cdn.tailwindcss.com">
     </script>
@@ -16,8 +16,21 @@
 
 
     <style>
+        @font-face {
+            font-family: 'New';
+            src: url('./fonts/NewTransport.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         html {
             scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'New', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
     </style>
 </head>
@@ -35,14 +48,16 @@
         <!-- Navbar -->
         <nav class="text-xs md:text-base flex items-center justify-center gap-4 md:gap-12 px-4 mt-10 md:mt-16">
 
-            <a href="#carrinho" class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
+            <a href="#carrinho"
+                class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
                 <div class="flex flex-col items-center justify-center">
                     <img src="./img/icons/carrinho-de-bebe (1).png" class="w-[24px] md:w-[32px]" alt="">
                     <div class="mt-1">Carrinhos</div>
                 </div>
             </a>
 
-            <a href="#moises" class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
+            <a href="#moises"
+                class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
                 <div class="flex flex-col items-center justify-center">
                     <img src="./img/icons/moises.png" class="w-[24px] md:w-[32px]" alt="">
                     <div class="mt-1">Moisés</div>
@@ -56,14 +71,16 @@
                 </div>
             </a>
 
-            <a href="#carrinho" class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
+            <a href="#carrinho"
+                class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
                 <div class="flex flex-col items-center justify-center ">
                     <img src="./img/icons/carrinho-de-crianca.png" class="w-[24px] md:w-[32px]" alt="">
                     <div class="mt-1 whitespace-nowrap">Bebê Conforto</div>
                 </div>
             </a>
 
-            <a href="#carrinho" class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
+            <a href="#carrinho"
+                class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
                 <div class="flex flex-col items-center justify-center ">
                     <img src="./img/icons/carrinho-de-bebe (3).png" class="w-[24px] md:w-[32px]" alt="">
                     <div class="mt-1 whitespace-nowrap">Bouncer</div>
@@ -78,12 +95,10 @@
 
 
             <!-- Card 1 -->
-            <a class="relative group w-full cursor-pointer" href="./trvl.html" id="carrinho">
+            <a class="relative group w-full cursor-pointer focus:outline-none" href="./trvl.html" id="carrinho">
                 <div class="relative overflow-hidden">
-                    <img alt="A stylish baby stroller in a modern setting"
-                        class="w-full object-cover transition-opacity duration-300" height="300"
-                        src="./img/grid1.jpg"
-                        width="400" />
+                    <img alt="#" class="w-full object-cover transition-opacity duration-300" height="300"
+                        src="./img/grid1.jpg" width="400" />
                     <!-- Efeito de escurecer a imagem -->
                     <div
                         class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300">
@@ -92,8 +107,8 @@
                     <div
                         class="absolute inset-0 flex items-end justify-center bg-gradient-to-t to-transparent opacity-0 group-hover:opacity-80 transition-opacity duration-300 p-6">
                         <div class="text-center text-white">
-                            <h1 class="md:text-2xl font-bold">
-                                TRVL™
+                            <h1 class="md:text-xl font-bold">
+                                TRVL&trade;
                             </h1>
                             <p class="hidden md:block">
                                 Carrinho de bebê
@@ -104,8 +119,8 @@
                 <!-- Descrição fixa para mobile -->
                 <div
                     class="block lg:hidden bg-[#E5E0DB] p-4 text-center transition-colors duration-300 group-hover:bg-gray-700 group-hover:text-white">
-                    <h1 class="text-xl font-bold">
-                        TRVL™
+                    <h1 class="text-xl font-extrabold">
+                        TRVL&trade;
                     </h1>
                     <p>
                         Carrinho de bebê
@@ -114,11 +129,10 @@
             </a>
 
             <!-- Card 2 -->
-            <a class="relative group w-full cursor-pointer" href="./trvl.html" id="carrinho">
+            <a class="relative group w-full cursor-pointer" href="./trvl.html">
                 <div class="relative overflow-hidden">
                     <img alt="A stylish baby stroller in a modern setting"
-                        class="w-full object-cover transition-opacity duration-300" height="300"
-                        src="./img/grid2.jpg"
+                        class="w-full object-cover transition-opacity duration-300" height="300" src="./img/grid2.jpg"
                         width="400" />
                     <!-- Efeito de escurecer a imagem -->
                     <div
@@ -128,7 +142,7 @@
                     <div
                         class="absolute inset-0 flex items-end justify-center bg-gradient-to-t to-transparent opacity-0 group-hover:opacity-80 transition-opacity duration-300 p-6">
                         <div class="text-center text-white">
-                            <h1 class="md:text-2xl font-bold">
+                            <h1 class="md:text-xl font-bold">
                                 TRVL™
                             </h1>
                             <p class="hidden md:block">
@@ -150,11 +164,10 @@
             </a>
 
             <!-- Card 3-->
-            <a class="relative group w-full cursor-pointer" href="./trvl.html" id="carrinho">
+            <a class="relative group w-full cursor-pointer" href="./trvl.html">
                 <div class="relative overflow-hidden">
                     <img alt="A stylish baby stroller in a modern setting"
-                        class="w-full object-cover transition-opacity duration-300" height="300"
-                        src="./img/grid3.jpg"
+                        class="w-full object-cover transition-opacity duration-300" height="300" src="./img/grid3.jpg"
                         width="400" />
                     <!-- Efeito de escurecer a imagem -->
                     <div
@@ -164,7 +177,7 @@
                     <div
                         class="absolute inset-0 flex items-end justify-center bg-gradient-to-t to-transparent opacity-0 group-hover:opacity-80 transition-opacity duration-300 p-6">
                         <div class="text-center text-white">
-                            <h1 class="md:text-2xl font-bold">
+                            <h1 class="md:text-xl font-bold">
                                 TRVL™
                             </h1>
                             <p class="hidden md:block">
@@ -196,10 +209,13 @@
     </footer>
 
     <!-- Floating Button -->
-    <button id="backToTop"
-        class="fixed bottom-4 right-4 bg-[#051D49] text-white p-4 rounded-full shadow-lg hover:cursor-hand">
-        <i class="fas fa-arrow-up"></i>
+    <button class="fixed bottom-4 right-4 bg-[#051D49] text-white p-4 rounded-full shadow-lg hover:cursor-hand"
+        id="backToTop" style="display: none;">
+        <i class="fas fa-arrow-up">
+        </i>
     </button>
+
+    <!-- Scripts -->
 
     <script>
         // Get the button
