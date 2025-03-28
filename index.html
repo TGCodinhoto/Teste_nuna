@@ -95,36 +95,32 @@
 
             <!-- Card 1 - TRVL -->
             <a class="relative group w-full cursor-pointer focus:outline-none" href="./trvl.html" id="carrinho">
+
                 <div class="relative overflow-hidden">
+                    
                     <img alt="#" class="w-full object-cover transition-opacity duration-300" height="300"
                         src="./img/grid1.jpg" width="400" />
+                        
                     <!-- Efeito de escurecer a imagem -->
                     <div
                         class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300">
                     </div>
-                    <!-- Container do texto que aparece ao passar o mouse -->
-                    <div
-                        class="absolute inset-0 flex items-end justify-center bg-gradient-to-t to-transparent opacity-0 group-hover:opacity-80 transition-opacity duration-300 p-6">
-                        <div class="text-center text-white">
+
+                    <!-- Container do texto que aparece ao passar o mouse ou fixo -->
+                    <div class="absolute inset-0 flex items-end justify-center bg-gradient-to-t to-transparent md:opacity-0 md:group-hover:opacity-80 transition-opacity duration-300 p-6">
+
+                        <div class="text-center text-white border-[1px] border-white rounded-3xl md:border-none px-4 py-1 hover:bg-white hover:text-[#051D49] transition-opacity duration-300 flex">
                             <h1 class="md:text-md font-bold">
-                                TRVL<span class="font-medium">&trade;</span>
+                                TRVL<span class="font-medium">&trade;</span> &#183;
                             </h1>
-                            <p class="hidden md:hidden md:block">
-                                Carrinho de bebê
+                            <p class="ml-1">
+                                 Carrinho de bebê
                             </p>
                         </div>
+
                     </div>
                 </div>
-                <!-- Descrição fixa para mobile -->
-                <div
-                    class="block lg:hidden bg-[#E5E0DB] p-4 text-center text-[#051D49] transition-colors duration-300 group-hover:bg-gray-700 group-hover:text-white">
-                    <h1 class="text-xl font-bold">
-                        TRVL<span class="font-medium">™</span>
-                    </h1>
-                    <p>
-                        Carrinho de bebê
-                    </p>
-                </div>
+    
             </a>
 
             <!-- Card 2 - TRVL LX -->
