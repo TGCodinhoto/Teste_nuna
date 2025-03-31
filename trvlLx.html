@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="" type="image/x-icon">
 
     <style>
-        font-face {
+        @font-face {
             font-family: 'New';
             src: url('./fonts/NewTransport.woff2') format('woff2'),
                 url('./fonts/NewTransport.woffs') format('woff');
@@ -110,20 +110,21 @@
                     <img src="./img/TRVL_CinzaRefined.png"
                         alt="Imagem do produto principal, mostrando um item de e-commerce em destaque"
                         class="object-cover">
-                    <div class="relative">
+
+                    <div class="relative p-6">
                         <button
-                            class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+                            class="absolute left-7 top-1/2 transform -translate-y-1/2 bg-gray-800 opacity-80 text-white p-2 rounded-full"
                             id="prevButton">
                             <i class="fas fa-chevron-left">
                             </i>
                         </button>
-                        <div class="carousel mt-2">
+                        <div class="carousel">
                             <img alt="Imagem adicional 2 do produto" class="w-64 h-40 object-cover rounded-lg mr-2"
                                 height="400" src="./img/TRVL_fechado.png" width="600" />
                             <img alt="Imagem adicional 4 do produto" class="w-64 h-40 object-cover rounded-lg mr-2"
-                                height="400" src="./img/TRVL_Sombreiro.png" width="600" />
-                            <img alt="Imagem adicional 4 do produto" class="w-64 h-40 object-cover rounded-lg mr-2"
                                 height="400" src="./img/TRVL_LateralAberto.png" width="600" />
+                            <img alt="Imagem adicional 4 do produto" class="w-64 h-40 object-cover rounded-lg mr-2"
+                                height="400" src="./img/TRVL_Sombreiro.png" width="600" />
                             <img alt="Imagem adicional 1 do produto" class="w-64 h-40 object-cover rounded-lg mr-2"
                                 height="400" src="./img/TRVL_Cinto.png" width="600" />
                             <img alt="Imagem adicional 3 do produto" class="w-64 h-40 object-cover rounded-lg mr-2"
@@ -131,17 +132,18 @@
                             <img alt="Imagem adicional 4 do produto" class="w-64 h-40 object-cover rounded-lg mr-2"
                                 height="400" src="./img/Nuna_09272021_US_TRVL_TPS9341_web.jpg" width="600" />
                             <img alt="Imagem adicional 4 do produto" class="w-64 h-40 object-cover rounded-lg mr-2"
-                                height="400" src="./img/Nuna_09272021_US_TRVL_TPS9729.jpg" width="600" />
-                            <img alt="Imagem adicional 4 do produto" class="w-64 h-40 object-cover rounded-lg mr-2"
                                 height="400" src="./img/Nuna_09272021_US_TRVL_TPS9574_web.jpg" width="600" />
+                            <img alt="Imagem adicional 4 do produto" class="w-64 h-40 object-cover rounded-lg mr-2"
+                                height="400" src="./img/Nuna_09272021_US_TRVL_TPS9729.jpg" width="600" />
                         </div>
                         <button
-                            class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+                            class="absolute right-7 top-1/2 transform -translate-y-1/2 bg-gray-800 opacity-80 text-white p-2 rounded-full"
                             id="nextButton">
                             <i class="fas fa-chevron-right">
                             </i>
                         </button>
                     </div>
+
                 </div>
 
                 <div class="p-6">
@@ -216,20 +218,30 @@
                 </div>
             </div>
 
-            <!-- Modal -->
-            <div id="modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center hidden">
-                <div class="bg-white rounded-lg p-6 max-w-sm mx-auto">
-                    <h2 class="text-xl font-bold text-gray-800">Produto Adicionado ao Carrinho</h2>
-                    <p class="text-gray-600 mt-2">O produto foi adicionado ao seu carrinho com sucesso.</p>
-                    <div class="mt-4 flex justify-end">
-                        <button
-                            class="bg-[#051D49] text-white py-2 px-4 rounded-lg hover:scale-[1.02] transition duration-300"
-                            onclick="closeModal()">Fechar</button>
-                    </div>
-                </div>
-            </div>
-
         </section>
+
+        <!-- Footer -->
+        <footer
+            class="bg-[#051D49] text-white text-center text-xs md:text-sm flex flex-col items-center justify-center p-4">
+            <p>Importado e distribuído por: Madeiranit Materiais para Construção Ltda</p>
+            <p>Contato: comercial@singularbaby.com.br</p>
+            <p>Tel. (19) 3554-9200 | (19) 9.97100-8698</p>
+            <div class="flex space-x-4 mt-4">
+                <a href="https://www.facebook.com" target="_blank" class="text-white">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="text-white">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="text-white">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" class="text-white">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </footer>
+
 
         <!-- Floating Button -->
         <button class="fixed bottom-4 right-4 bg-[#051D49] text-white p-4 rounded-full shadow-lg hover:cursor-hand"
