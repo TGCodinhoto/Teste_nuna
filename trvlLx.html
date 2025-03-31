@@ -16,7 +16,7 @@
         font-face {
             font-family: 'New';
             src: url('./fonts/NewTransport.woff2') format('woff2'),
-            url('./fonts/NewTransport.woffs') format('woff');
+                url('./fonts/NewTransport.woffs') format('woff');
             font-weight: normal;
             font-style: normal;
         }
@@ -25,78 +25,80 @@
             scroll-behavior: smooth;
         }
 
-        .carousel-item {
-            display: none;
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
         }
 
-        .carousel-item.active {
-            display: block;
+        .carousel::-webkit-scrollbar {
+            display: none;
         }
     </style>
 </head>
 
 <body>
 
-     <!-- Header -->
-     <header id="home"
-     class="bg-[#051D49] flex flex-col justify-center items-center text-white p-10 min-h-[100px] md:min-h[300px]">
+    <!-- Header -->
+    <header id="home"
+        class="bg-[#051D49] flex flex-col justify-center items-center text-white p-10 min-h-[100px] md:min-h[300px]">
 
-     <div class="w-full flex justify-center items-center">
-         <a href="#"><img class="w-[200px] md:w-[400px]" src="./img/nuna_logo branco.png" alt="Logo Nuna"></a>
-     </div>
+        <div class="w-full flex justify-center items-center">
+            <a href="#"><img class="w-[200px] md:w-[400px]" src="./img/nuna_logo branco.png" alt="Logo Nuna"></a>
+        </div>
 
-     <!-- Navbar -->
-     <nav class="text-xs md:text-base flex items-center justify-center gap-4 md:gap-12 px-4 mt-10 md:mt-16">
+        <!-- Navbar -->
+        <nav class="text-xs md:text-base flex items-center justify-center gap-4 md:gap-12 px-4 mt-10 md:mt-16">
 
-         <a href="./index.html#home"
-             class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
-             <div class="flex flex-col items-center justify-center">
-                 <img src="./img/icons/casa.png" class="w-[24px] md:w-[32px]" alt="">
-                 <div class="mt-1">Home</div>
-             </div>
-         </a>
+            <a href="./index.html#home"
+                class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
+                <div class="flex flex-col items-center justify-center">
+                    <img src="./img/icons/casa.png" class="w-[24px] md:w-[32px]" alt="">
+                    <div class="mt-1">Home</div>
+                </div>
+            </a>
 
-         <a href="./index.html#carrinho"
-             class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
-             <div class="flex flex-col items-center justify-center">
-                 <img src="./img/icons/carrinho-de-bebe (1).png" class="w-[24px] md:w-[32px]" alt="">
-                 <div class="mt-1">Carrinhos</div>
-             </div>
-         </a>
+            <a href="./index.html#carrinho"
+                class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
+                <div class="flex flex-col items-center justify-center">
+                    <img src="./img/icons/carrinho-de-bebe (1).png" class="w-[24px] md:w-[32px]" alt="">
+                    <div class="mt-1">Carrinhos</div>
+                </div>
+            </a>
 
-         <a href="#index.html#moises"
-             class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
-             <div class="flex flex-col items-center justify-center">
-                 <img src="./img/icons/moises.png" class="w-[24px] md:w-[32px]" alt="">
-                 <div class="mt-1">Moisés</div>
-             </div>
-         </a>
+            <a href="#index.html#moises"
+                class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
+                <div class="flex flex-col items-center justify-center">
+                    <img src="./img/icons/moises.png" class="w-[24px] md:w-[32px]" alt="">
+                    <div class="mt-1">Moisés</div>
+                </div>
+            </a>
 
-         <a href="#c" class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
-             <div class="flex flex-col items-center justify-center">
-                 <img src="./img/icons/mae-com-bebe.png" class="w-[24px] md:w-[32px]" alt="">
-                 <div class="mt-1">Combo</div>
-             </div>
-         </a>
+            <a href="#c" class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
+                <div class="flex flex-col items-center justify-center">
+                    <img src="./img/icons/mae-com-bebe.png" class="w-[24px] md:w-[32px]" alt="">
+                    <div class="mt-1">Combo</div>
+                </div>
+            </a>
 
-         <a href="#carrinho"
-             class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
-             <div class="flex flex-col items-center justify-center ">
-                 <img src="./img/icons/carrinho-de-crianca.png" class="w-[24px] md:w-[32px]" alt="">
-                 <div class="mt-1 whitespace-nowrap">Bebê Conforto</div>
-             </div>
-         </a>
+            <a href="#carrinho"
+                class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
+                <div class="flex flex-col items-center justify-center ">
+                    <img src="./img/icons/carrinho-de-crianca.png" class="w-[24px] md:w-[32px]" alt="">
+                    <div class="mt-1 whitespace-nowrap">Bebê Conforto</div>
+                </div>
+            </a>
 
-         <a href="#carrinho"
-             class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
-             <div class="flex flex-col items-center justify-center ">
-                 <img src="./img/icons/carrinho-de-bebe (3).png" class="w-[24px] md:w-[32px]" alt="">
-                 <div class="mt-1 whitespace-nowrap">Bouncer</div>
-             </div>
-         </a>
+            <a href="#carrinho"
+                class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
+                <div class="flex flex-col items-center justify-center ">
+                    <img src="./img/icons/carrinho-de-bebe (3).png" class="w-[24px] md:w-[32px]" alt="">
+                    <div class="mt-1 whitespace-nowrap">Bouncer</div>
+                </div>
+            </a>
 
-     </nav>
- </header>
+        </nav>
+    </header>
 
     <main>
 
@@ -104,8 +106,43 @@
 
             <div class="mx-auto my-6 bg-white rounded-lg shadow-lg overflow-hidden">
 
-                <img id="mainImage" src="./img/TRVL_CinzaRefined.png"
-                    alt="Imagem do produto principal, mostrando um item de e-commerce em destaque" class="object-cover">
+                <div id="mainImage">
+                    <img src="./img/TRVL_CinzaRefined.png"
+                        alt="Imagem do produto principal, mostrando um item de e-commerce em destaque"
+                        class="object-cover">
+                    <div class="relative">
+                        <button
+                            class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+                            id="prevButton">
+                            <i class="fas fa-chevron-left">
+                            </i>
+                        </button>
+                        <div class="carousel mt-2">
+                            <img alt="Imagem adicional 2 do produto" class="w-64 h-40 object-cover rounded-lg mr-2"
+                                height="400" src="./img/TRVL_fechado.png" width="600" />
+                            <img alt="Imagem adicional 4 do produto" class="w-64 h-40 object-cover rounded-lg mr-2"
+                                height="400" src="./img/TRVL_Sombreiro.png" width="600" />
+                            <img alt="Imagem adicional 4 do produto" class="w-64 h-40 object-cover rounded-lg mr-2"
+                                height="400" src="./img/TRVL_LateralAberto.png" width="600" />
+                            <img alt="Imagem adicional 1 do produto" class="w-64 h-40 object-cover rounded-lg mr-2"
+                                height="400" src="./img/TRVL_Cinto.png" width="600" />
+                            <img alt="Imagem adicional 3 do produto" class="w-64 h-40 object-cover rounded-lg mr-2"
+                                height="400" src="./img/TRVL_Rodinha.png" width="600" />
+                            <img alt="Imagem adicional 4 do produto" class="w-64 h-40 object-cover rounded-lg mr-2"
+                                height="400" src="./img/Nuna_09272021_US_TRVL_TPS9341_web.jpg" width="600" />
+                            <img alt="Imagem adicional 4 do produto" class="w-64 h-40 object-cover rounded-lg mr-2"
+                                height="400" src="./img/Nuna_09272021_US_TRVL_TPS9729.jpg" width="600" />
+                            <img alt="Imagem adicional 4 do produto" class="w-64 h-40 object-cover rounded-lg mr-2"
+                                height="400" src="./img/Nuna_09272021_US_TRVL_TPS9574_web.jpg" width="600" />
+                        </div>
+                        <button
+                            class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+                            id="nextButton">
+                            <i class="fas fa-chevron-right">
+                            </i>
+                        </button>
+                    </div>
+                </div>
 
                 <div class="p-6">
                     <h2 class="text-xl font-bold text-[#051D49]" id="productName">
@@ -115,26 +152,26 @@
                         <h3 class="text-lg font-semibold text-[#051D49]">Variações de Cores </h3>
                         <div class="flex space-x-2 mt-2">
 
-                            <div class="border-[1.5px] border-[#051D49] rounded-full p-[0.1rem]">
+                            <div>
                                 <div alt="Variação de cor vermelha do produto"
                                     class="w-10 h-10 bg-[#8C8A89] rounded-full border border-gray-300 cursor-pointer"
                                     onclick="changeImage('./img/TRVL_CinzaRefined.png', 'TRVL™ Cinza Refined')"
                                     width="50" height="50">
                                 </div>
                             </div>
-                            <div class="border-[1.5px] border-[#051D49] rounded-full p-[0.1rem]">
+                            <div>
                                 <div alt="Variação de cor vermelha do produto"
                                     class="w-10 h-10 bg-[#806E64] rounded-full border border-gray-300 cursor-pointer"
                                     onclick="changeImage('./img/TRVL_BegeCedar.png', 'TRVL™ Bege Cedar')" width="50"
                                     height="50"></div>
                             </div>
-                            <div class="border-[1.5px] border-[#051D49] rounded-full p-[0.1rem]">
+                            <div>
                                 <div alt="Variação de cor vermelha do produto"
                                     class="w-10 h-10 bg-[#A49D97] rounded-full border border-gray-300 cursor-pointer"
                                     onclick="changeImage('./img/TRVL_Granite.png', 'TRVL™ Granite' )" width="50"
                                     height="50"></div>
                             </div>
-                            <div class="border-[1.5px] border-[#051D49] rounded-full p-[0.1rem]">
+                            <div>
                                 <div alt="Variação de cor vermelha do produto"
                                     class="w-10 h-10 bg-[#CBB9A5] rounded-full border border-gray-300 cursor-pointer"
                                     onclick="changeImage('./img/TRVL_BegeCedar.png', 'TRVL™ Bege Cedar')" width="50"
@@ -146,12 +183,23 @@
                     <div class="leading-relaxed text-justify">
                         <h3 class="mt-2 text-lg font-semibold text-[#051D49]">Descrição</h3>
                         <p class="text-gray-600 mt-2"> Leve, Compacto e Cheio de Estilo</p>
-                        <p class="text-gray-600 mt-2 "> O <strong>TRVL™</strong> é o carrinho perfeito para pais que buscam praticidade sem abrir mão do conforto e do design sofisticado. Ultraleve (6,6 kg) e compacto, ele é ideal para viagens e passeios urbanos, dobrando-se automaticamente com apenas uma mão e ficando em pé sozinho quando fechado.</p>
-                        <p class="text-gray-600 mt-2"> Compatível com os bebês conforto da série Nuna PIPA™, o TRVL transforma-se em um sistema de viagem sem necessidade de adaptadores. Seu sistema de suspensão em todas as rodas e os freios de um toque garantem um passeio suave e seguro, enquanto a capota extensível UPF 50+ protege contra o sol e a chuva.
+                        <p class="text-gray-600 mt-2 "> O <strong>TRVL™</strong> é o carrinho perfeito para pais que
+                            buscam praticidade sem abrir mão do conforto e do design sofisticado. Ultraleve (6,6 kg) e
+                            compacto, ele é ideal para viagens e passeios urbanos, dobrando-se automaticamente com
+                            apenas uma mão e ficando em pé sozinho quando fechado.</p>
+                        <p class="text-gray-600 mt-2"> Compatível com os bebês conforto da série Nuna PIPA™, o TRVL
+                            transforma-se em um sistema de viagem sem necessidade de adaptadores. Seu sistema de
+                            suspensão em todas as rodas e os freios de um toque garantem um passeio suave e seguro,
+                            enquanto a capota extensível UPF 50+ protege contra o sol e a chuva.
                         </p>
-                        <p class="text-gray-600 mt-2">O assento alto de 49 cm proporciona espaço extra para armazenamento e pode ser usado como cadeira de refeição em mesas. Além disso, o cinto MagneTech™ com fecho magnético automático e o ajuste de inclinação personalizado garantem máximo conforto para o bebê.
+                        <p class="text-gray-600 mt-2">O assento alto de 49 cm proporciona espaço extra para
+                            armazenamento e pode ser usado como cadeira de refeição em mesas. Além disso, o cinto
+                            MagneTech™ com fecho magnético automático e o ajuste de inclinação personalizado garantem
+                            máximo conforto para o bebê.
                         </p>
-                        <p class="text-gray-600 mt-2">Com acabamentos premium em couro sintético, tecidos certificados OEKO-TEX® e uma cesta espaçosa para armazenar itens essenciais, o TRVL é a escolha ideal para quem deseja explorar o mundo com estilo e praticidade.
+                        <p class="text-gray-600 mt-2">Com acabamentos premium em couro sintético, tecidos certificados
+                            OEKO-TEX® e uma cesta espaçosa para armazenar itens essenciais, o TRVL é a escolha ideal
+                            para quem deseja explorar o mundo com estilo e praticidade.
 
                     </div>
                     <div class="mt-4">
@@ -164,11 +212,7 @@
                             <li>Especificação 5: Detalhe da especificação 5</li>
                         </ul>
                     </div>
-                    <div class="mt-6">
-                        <button
-                            class="w-full bg-[#051D49] text-white py-2 rounded-lg hover:scale-[1.02] transition duration-300"
-                            onclick="openModal()">Detalhes</button>
-                    </div>
+
                 </div>
             </div>
 
@@ -198,21 +242,65 @@
     </main>
 
     <script>
-        function changeImage(src, name) {
-            document.getElementById('mainImage').src = src;
-            document.getElementById('productName').innerText = name;
+        function changeImage(src, alt) {
+            document.getElementById('mainImage').querySelector('img').src = src;
+            document.getElementById('mainImage').querySelector('img').alt = alt;
+            document.getElementById('productName').innerText = alt;
         }
 
-        function openModal() {
-            document.getElementById('modal').classList.remove('hidden');
-        }
+        document.addEventListener('DOMContentLoaded', function () {
+            const carousel = document.querySelector('.carousel');
+            const prevButton = document.getElementById('prevButton');
+            const nextButton = document.getElementById('nextButton');
+            let scrollAmount = 0;
+            const scrollStep = 300;
+            const delay = 3000;
 
-        function closeModal() {
-            document.getElementById('modal').classList.add('hidden');
-        }
+            function autoScroll() {
+                if (scrollAmount >= carousel.scrollWidth - carousel.clientWidth) {
+                    scrollAmount = 0;
+                } else {
+                    scrollAmount += scrollStep;
+                }
+                carousel.scrollTo({
+                    top: 0,
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
 
-        
-        // Get the button
+            function scrollLeft() {
+                scrollAmount -= scrollStep;
+                if (scrollAmount < 0) {
+                    scrollAmount = 0;
+                }
+                carousel.scrollTo({
+                    top: 0,
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
+
+            function scrollRight() {
+                if (scrollAmount >= carousel.scrollWidth - carousel.clientWidth) {
+                    scrollAmount = 0;
+                } else {
+                    scrollAmount += scrollStep;
+                }
+                carousel.scrollTo({
+                    top: 0,
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
+
+            prevButton.addEventListener('click', scrollLeft);
+            nextButton.addEventListener('click', scrollRight);
+
+            setInterval(autoScroll, delay);
+        });
+
+        // Voltar ao topo
         let mybutton = document.getElementById("backToTop");
 
         // When the user scrolls down 20px from the top of the document, show the button
