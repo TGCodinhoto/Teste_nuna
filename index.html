@@ -19,7 +19,7 @@
         @font-face {
             font-family: 'New';
             src: url('./fonts/NewTransport.woff2') format('woff2'),
-            url('./fonts/NewTransport.woffs') format('woff');
+                url('./fonts/NewTransport.woffs') format('woff');
             font-weight: normal;
             font-style: normal;
         }
@@ -63,7 +63,7 @@
                 </div>
             </a>
 
-            <a href="#moises"
+            <a href="#MoisesCombo"
                 class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
                 <div class="flex flex-col items-center justify-center">
                     <img src="./img/icons/moises.png" class="w-[24px] md:w-[32px]" alt="">
@@ -71,14 +71,15 @@
                 </div>
             </a>
 
-            <a href="#combos" class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
+            <a href="#MoisesCombo"
+                class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
                 <div class="flex flex-col items-center justify-center">
                     <img src="./img/icons/mae-com-bebe.png" class="w-[24px] md:w-[32px]" alt="">
                     <div class="mt-1">Combo</div>
                 </div>
             </a>
 
-            <a href="#bebeconforto"
+            <a href="#ConfortoBouncer"
                 class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
                 <div class="flex flex-col items-center justify-center ">
                     <img src="./img/icons/carrinho-de-bebe (3).png" class="w-[24px] md:w-[32px]" alt="">
@@ -86,7 +87,7 @@
                 </div>
             </a>
 
-            <a href="#bouncer"
+            <a href="#ConfortoBouncer"
                 class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
                 <div class="flex flex-col items-center justify-center ">
                     <img src="./img/icons/bouncer (1).png" class="w-[24px] md:w-[32px]" alt="">
@@ -98,157 +99,184 @@
     </header>
 
     <main>
-        <div class="grid grid-cols-1 lg:grid-cols-3">
+
+        
+        <div id="carrinho" class="flex justify-center items-center py-4 px-8 bg-[#D0DBD6]">
+            <h1 class="font-bold text-md md:text-xl text-[#051D49]">Carrinhos</h1>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 ">
 
 
             <!-- Card 1 - TRVL -->
-            <a class="relative group w-full cursor-pointer focus:outline-none" href="./trvl.html" id="carrinho">
+            <a class="relative group w-full cursor-pointer focus:outline-none" href="./trvl.html">
 
                 <div class="relative overflow-hidden">
-                    
+
                     <img alt="#" class="w-full object-cover transition-opacity duration-300" height="300"
                         src="./img/grid/TRLV.jpg" width="400" />
-                        
+
                     <!-- Efeito de escurecer a imagem -->
                     <div
                         class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300">
                     </div>
 
                     <!-- Container do texto que aparece ao passar o mouse ou fixo -->
-                    <div class="absolute inset-0 flex items-end justify-center bg-gradient-to-t to-transparent transition-opacity duration-300 p-6">
+                    <div
+                        class="absolute inset-0 flex items-end justify-center bg-gradient-to-t to-transparent transition-opacity duration-300 p-6">
 
-                        <div class="text-center text-white text-lg md:text-base border-[1.5px] border-white rounded-3xl px-4 py-1 bg-white bg-opacity-0 backdrop-blur-md hover:bg-white hover:text-[#051D49] transition-opacity duration-300 flex">
+                        <div
+                            class="text-center text-white text-lg md:text-base border-[1.5px] border-white rounded-3xl px-4 py-1 bg-white bg-opacity-0 backdrop-blur-md hover:bg-white hover:text-[#051D49] transition-opacity duration-300 flex">
 
                             <h1 class="font-bold">
                                 TRVL<span class="font-medium">&trade;</span> &#183;
                             </h1>
                             <p class="ml-1">
-                                 Carrinho de bebê
+                                Carrinho de bebê
                             </p>
 
                         </div>
 
                     </div>
                 </div>
-    
+
             </a>
 
             <!-- Card 2 - TRVL LX -->
             <a class="relative group w-full cursor-pointer focus:outline-none" href="./trvlLx.html" id="carrinho">
 
                 <div class="relative overflow-hidden">
-                    
+
                     <img alt="#" class="w-full object-cover transition-opacity duration-300" height="300"
                         src="./img/grid/TRLV_LX.jpg" width="400" />
-                        
+
                     <!-- Efeito de escurecer a imagem -->
                     <div
                         class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300">
                     </div>
 
                     <!-- Container do texto que aparece ao passar o mouse ou fixo -->
-                    <div class="absolute inset-0 flex items-end justify-center bg-gradient-to-t to-transparent transition-opacity duration-300 p-6">
+                    <div
+                        class="absolute inset-0 flex items-end justify-center bg-gradient-to-t to-transparent transition-opacity duration-300 p-6">
 
-                        <div class="text-center text-white text-lg md:text-base border-[1.5px] border-white rounded-3xl  px-4 py-1 bg-white bg-opacity-0 backdrop-blur-md hover:bg-white hover:text-[#051D49] transition-opacity duration-300 flex">
+                        <div
+                            class="text-center text-white text-lg md:text-base border-[1.5px] border-white rounded-3xl  px-4 py-1 bg-white bg-opacity-0 backdrop-blur-md hover:bg-white hover:text-[#051D49] transition-opacity duration-300 flex">
 
                             <h1 class="font-bold">
                                 TRVL<span class="font-medium">&trade;<i class="font-thin">LX</i></span> &#183;
                             </h1>
                             <p class="ml-1">
-                                 Carrinho de bebê
+                                Carrinho de bebê
                             </p>
 
                         </div>
 
                     </div>
                 </div>
-    
+
             </a>
 
             <!-- Card 3 - demi grow -->
             <a class="relative group w-full cursor-pointer focus:outline-none" href="./demiGrow.html" id="carrinho">
 
                 <div class="relative overflow-hidden">
-                    
+
                     <img alt="#" class="w-full object-cover transition-opacity duration-300" height="300"
                         src="./img/grid/DEMI-grow.jpg" width="400" />
-                        
+
                     <!-- Efeito de escurecer a imagem -->
                     <div
                         class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300">
                     </div>
 
                     <!-- Container do texto que aparece ao passar o mouse ou fixo -->
-                    <div class="absolute inset-0 flex items-end justify-center bg-gradient-to-t to-transparent transition-opacity duration-300 p-6">
+                    <div
+                        class="absolute inset-0 flex items-end justify-center bg-gradient-to-t to-transparent transition-opacity duration-300 p-6">
 
-                        <div class="text-center text-white text-lg md:text-base border-[1.5px] border-white rounded-3xl px-4 py-1 bg-white bg-opacity-0 backdrop-blur-md hover:bg-white hover:text-[#051D49] transition-opacity duration-300 flex">
+                        <div
+                            class="text-center text-white text-lg md:text-base border-[1.5px] border-white rounded-3xl px-4 py-1 bg-white bg-opacity-0 backdrop-blur-md hover:bg-white hover:text-[#051D49] transition-opacity duration-300 flex">
 
                             <h1 class="font-bold">
                                 demi<span class="font-medium">&trade;</span> <i class="font-thin">grow </i>&#183;
                             </h1>
                             <p class="ml-1">
-                                 Carrinho de bebê
+                                Carrinho de bebê
                             </p>
 
                         </div>
 
                     </div>
                 </div>
-    
+
             </a>
+        </div>
+
+       
+        <div id="MoisesCombo" class="flex justify-center items-center py-4 px-8 bg-[#E5E0DB]">
+            <h1 class="font-bold text-md md:text-xl text-[#051D49]">Moisés e combos</h1>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 ">
 
             <!-- Card 4 - demi next bassinet -->
-            <a class="relative group w-full cursor-pointer focus:outline-none" href="./demiNextBassinet.html" id="moises">
+            <a class="relative group w-full cursor-pointer focus:outline-none" href="./demiNextBassinet.html"
+                id="moises">
 
                 <div class="relative overflow-hidden">
-                    
+
                     <img alt="#" class="w-full object-cover transition-opacity duration-300" height="300"
                         src="./img/grid/MIXXnext.jpg" width="400" />
-                        
+
                     <!-- Efeito de escurecer a imagem -->
                     <div
                         class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300">
                     </div>
 
                     <!-- Container do texto que aparece ao passar o mouse ou fixo -->
-                    <div class="absolute inset-0 flex items-end justify-center bg-gradient-to-t to-transparent transition-opacity duration-300 p-6">
+                    <div
+                        class="absolute inset-0 flex items-end justify-center bg-gradient-to-t to-transparent transition-opacity duration-300 p-6">
 
-                        <div class="text-center text-white text-md md:text-base border-[1.5px] border-white rounded-3xl px-4 py-1 bg-white bg-opacity-0 backdrop-blur-md hover:bg-white hover:text-[#051D49] transition-opacity duration-300 flex">
+                        <div
+                            class="text-center text-white text-md md:text-base border-[1.5px] border-white rounded-3xl px-4 py-1 bg-white bg-opacity-0 backdrop-blur-md hover:bg-white hover:text-[#051D49] transition-opacity duration-300 flex">
 
                             <h1 class="font-bold">
-                                demi<span class="font-medium">&trade;</span><i class="font-thin">next bassinet</i> &#183;
+                                demi<span class="font-medium">&trade;</span><i class="font-thin">next bassinet</i>
+                                &#183;
                             </h1>
                             <p class="ml-1 whitespace-nowrap">
-                                 Moisés
+                                Moisés
                             </p>
 
                         </div>
 
                     </div>
                 </div>
-    
+
             </a>
 
             <!-- Card 5 - combo mix next -->
             <a class="relative group w-full cursor-pointer focus:outline-none" href="./trvl.html" id="combos">
 
                 <div class="relative overflow-hidden">
-                    
+
                     <img alt="#" class="w-full object-cover transition-opacity duration-300" height="300"
                         src="./img/grid/ComboDemiGrow.jpg " width="400" />
-                        
+
                     <!-- Efeito de escurecer a imagem -->
                     <div
                         class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300">
                     </div>
 
                     <!-- Container do texto que aparece ao passar o mouse ou fixo -->
-                    <div class="absolute inset-0 flex items-end justify-center bg-gradient-to-t to-transparent transition-opacity duration-300 p-6">
+                    <div
+                        class="absolute inset-0 flex items-end justify-center bg-gradient-to-t to-transparent transition-opacity duration-300 p-6">
 
-                        <div class="text-center text-white text-lg md:text-base border-[1.5px] border-white rounded-3xl  px-4 py-1 bg-white bg-opacity-0 backdrop-blur-md hover:bg-white hover:text-[#051D49] transition-opacity duration-300 flex">
+                        <div
+                            class="text-center text-white text-lg md:text-base border-[1.5px] border-white rounded-3xl  px-4 py-1 bg-white bg-opacity-0 backdrop-blur-md hover:bg-white hover:text-[#051D49] transition-opacity duration-300 flex">
 
                             <h1 class="font-bold">
-                               combo mixx<span class="font-medium">&trade;</span><span class="font-thin"><i>next</i></span> &#183;
+                                combo mixx<span class="font-medium">&trade;</span><span
+                                    class="font-thin"><i>next</i></span> &#183;
                             </h1>
                             <p class="ml-1">
                                 Carrinho + Moisés
@@ -258,130 +286,148 @@
 
                     </div>
                 </div>
-    
+
             </a>
 
-           <!-- Card 6 combo demi  -->
+            <!-- Card 6 combo demi  -->
             <a class="relative group w-full cursor-pointer focus:outline-none" href="./trvl.html" id="carrinho">
 
                 <div class="relative overflow-hidden">
-                    
+
                     <img alt="#" class="w-full object-cover transition-opacity duration-300" height="300"
                         src="./img/grid/Pipa.jpg" width="400" />
-                        
+
                     <!-- Efeito de escurecer a imagem -->
                     <div
                         class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300">
                     </div>
 
                     <!-- Container do texto que aparece ao passar o mouse ou fixo -->
-                    <div class="absolute inset-0 flex items-end justify-center bg-gradient-to-t to-transparent transition-opacity duration-300 p-6">
+                    <div
+                        class="absolute inset-0 flex items-end justify-center bg-gradient-to-t to-transparent transition-opacity duration-300 p-6">
 
-                        <div class="text-center text-white text-lg md:text-base border-[1.5px] border-white rounded-3xl  px-4 py-1 bg-white bg-opacity-0 backdrop-blur-md hover:bg-white hover:text-[#051D49] transition-opacity duration-300 flex">
+                        <div
+                            class="text-center text-white text-lg md:text-base border-[1.5px] border-white rounded-3xl  px-4 py-1 bg-white bg-opacity-0 backdrop-blur-md hover:bg-white hover:text-[#051D49] transition-opacity duration-300 flex">
 
                             <h1 class="font-bold">
                                 combo demi<span class="font-medium">&trade;</span> &#183;
                             </h1>
                             <p class="ml-1">
-                                 Carrinho + Moisés
+                                Carrinho + Moisés
                             </p>
 
                         </div>
 
-                    </div> 
+                    </div>
                 </div>
             </a>
+        </div>
 
-           <!-- Card 7 pipa next  -->
+         
+        <div id="ConfortoBouncer" class="flex justify-center items-center py-4 px-8 bg-[#D8DFDF] ">
+            <h1 class="font-bold text-md md:text-xl text-[#051D49]">Bebê conforto e bouncer</h1>
+        </div>
+
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 ">
+
+            <!-- Card 7 pipa next  -->
             <a class="relative group w-full cursor-pointer focus:outline-none" href="./trvl.html" id="bebeconforto">
 
                 <div class="relative overflow-hidden">
-                    
+
                     <img alt="#" class="w-full object-cover transition-opacity duration-300" height="300"
                         src="./img/grid/Pipa.jpg" width="400" />
-                        
+
                     <!-- Efeito de escurecer a imagem -->
                     <div
                         class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300">
                     </div>
 
                     <!-- Container do texto que aparece ao passar o mouse ou fixo -->
-                    <div class="absolute inset-0 flex items-end justify-center bg-gradient-to-t to-transparent transition-opacity duration-300 p-6">
+                    <div
+                        class="absolute inset-0 flex items-end justify-center bg-gradient-to-t to-transparent transition-opacity duration-300 p-6">
 
-                        <div class="text-center text-white text-lg md:text-base border-[1.5px] border-white rounded-3xl  px-4 py-1 bg-white bg-opacity-0 backdrop-blur-md hover:bg-white hover:text-[#051D49] transition-opacity duration-300 flex">
+                        <div
+                            class="text-center text-white text-lg md:text-base border-[1.5px] border-white rounded-3xl  px-4 py-1 bg-white bg-opacity-0 backdrop-blur-md hover:bg-white hover:text-[#051D49] transition-opacity duration-300 flex">
 
                             <h1 class="font-bold">
                                 pipa<span class="font-medium">&trade;</span><span class="font-thin"><i>next</i></span>
                                 &#183;</h1>
                             <p class="ml-1">
-                                 Bebê conforto
+                                Bebê conforto
                             </p>
 
                         </div>
 
-                    </div> 
+                    </div>
                 </div>
             </a>
 
-           <!-- Card 8 leaf  -->
+            <!-- Card 8 leaf  -->
             <a class="relative group w-full cursor-pointer focus:outline-none" href="./trvl.html" id="bouncer">
 
                 <div class="relative overflow-hidden">
-                    
+
                     <img alt="#" class="w-full object-cover transition-opacity duration-300" height="300"
                         src="./img/grid/LEAF.jpg" width="400" />
-                        
+
                     <!-- Efeito de escurecer a imagem -->
                     <div
                         class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300">
                     </div>
 
                     <!-- Container do texto que aparece ao passar o mouse ou fixo -->
-                    <div class="absolute inset-0 flex items-end justify-center bg-gradient-to-t to-transparent transition-opacity duration-300 p-6">
+                    <div
+                        class="absolute inset-0 flex items-end justify-center bg-gradient-to-t to-transparent transition-opacity duration-300 p-6">
 
-                        <div class="text-center text-white text-lg md:text-base border-[1.5px] border-white rounded-3xl  px-4 py-1 bg-white bg-opacity-0 backdrop-blur-md hover:bg-white hover:text-[#051D49] transition-opacity duration-300 flex">
+                        <div
+                            class="text-center text-white text-lg md:text-base border-[1.5px] border-white rounded-3xl  px-4 py-1 bg-white bg-opacity-0 backdrop-blur-md hover:bg-white hover:text-[#051D49] transition-opacity duration-300 flex">
 
                             <h1 class="font-bold">
                                 leaf<span class="font-medium">&trade;</span><span class="font-thin"><i>grow</i></span>
                                 &#183;</h1>
                             <p class="ml-1">
-                                 Bouncer
+                                Bouncer
                             </p>
 
                         </div>
 
-                    </div> 
+                    </div>
                 </div>
             </a>
 
-           <!-- Card 9 pipa next base -->
+            <!-- Card 9 pipa next base -->
             <a class="relative group w-full cursor-pointer focus:outline-none" href="./trvl.html">
 
                 <div class="relative overflow-hidden">
-                    
+
                     <img alt="#" class="w-full object-cover transition-opacity duration-300" height="300"
                         src="./img/grid/Next-Base_01.png" width="400" />
-                        
+
                     <!-- Efeito de escurecer a imagem -->
                     <div
                         class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300">
                     </div>
 
                     <!-- Container do texto que aparece ao passar o mouse ou fixo -->
-                    <div class="absolute inset-0 flex items-end justify-center bg-gradient-to-t to-transparent transition-opacity duration-300 p-6">
+                    <div
+                        class="absolute inset-0 flex items-end justify-center bg-gradient-to-t to-transparent transition-opacity duration-300 p-6">
 
-                        <div class="text-center text-white text-md md:text-base border-[1.5px] border-white rounded-3xl  px-4 py-1 bg-white bg-opacity-0 backdrop-blur-md hover:bg-white hover:text-[#051D49] transition-opacity duration-300 flex">
+                        <div
+                            class="text-center text-white text-md md:text-base border-[1.5px] border-white rounded-3xl  px-4 py-1 bg-white bg-opacity-0 backdrop-blur-md hover:bg-white hover:text-[#051D49] transition-opacity duration-300 flex">
 
                             <h1 class="font-bold">
-                                pipa<span class="font-medium">&trade;</span><span class="font-thin"><i>next base</i></span>
+                                pipa<span class="font-medium">&trade;</span><span class="font-thin"><i>next
+                                        base</i></span>
                                 &#183;</h1>
                             <p class="ml-1">
-                                 Base do bebê conforto
+                                Base do bebê conforto
                             </p>
 
                         </div>
 
-                    </div> 
+                    </div>
                 </div>
             </a>
 
@@ -389,25 +435,19 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-[#051D49] text-white text-center text-xs md:text-sm flex flex-col items-center justify-center p-4">
+    <footer
+        class="bg-[#051D49] text-white text-center text-xs md:text-sm flex flex-col items-center justify-center p-4">
         <p>Importado e distribuído por: Madeiranit Materiais para Construção Ltda</p>
         <p>Contato: comercial@singularbaby.com.br</p>
         <p>Tel. (19) 3554-9200 | (19) 9.97100-8698</p>
+
         <div class="flex space-x-4 mt-4">
-            <a href="https://www.facebook.com" target="_blank" class="text-white">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.twitter.com" target="_blank" class="text-white">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com" target="_blank" class="text-white">
+            <a href="https://www.instagram.com/nunabrasil?igsh=MWh5Z3hhcXAyNTlmdQ==" target="_blank"
+                class="text-white text-xl">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://www.linkedin.com" target="_blank" class="text-white">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
         </div>
-    </footer> 
+    </footer>
 
     <!-- Floating Button -->
     <button class="fixed bottom-4 right-4 bg-[#051D49] text-white p-4 rounded-full shadow-lg hover:cursor-hand"
