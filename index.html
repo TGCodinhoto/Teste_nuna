@@ -6,11 +6,14 @@
     <title>
         Singular + Nuna
     </title>
-    <script src="https://cdn.tailwindcss.com">
+
+    <link rel="stylesheet" href="./dist/output.css">
+
+    <!-- <script src="https://cdn.tailwindcss.com">
     </script>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" /> -->
 
     <!-- Favicon -->
 
@@ -99,9 +102,9 @@
     </header>
 
     <main>
-        
+
         <div id="carrinho" class="flex justify-center items-center py-4 px-8 bg-[#D0DBD6] flex flex-col">
-            <h3 class="font-thin text-[#051D49]">Carrinhos de bebês</h3> 
+            <h3 class="font-thin text-[#051D49] md:text-2xl">Carrinhos de bebês</h3>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 ">
@@ -112,7 +115,7 @@
                 <div class="relative overflow-hidden">
 
                     <img alt="#" class="w-full object-cover transition-opacity duration-300" height="300"
-                        src="./img/grid/TRLV.jpg" width="400"/>
+                        src="./img/grid/TRLV.jpg" width="400" />
 
                     <!-- Efeito de escurecer a imagem -->
                     <div
@@ -209,9 +212,9 @@
             </a>
         </div>
 
-       
+
         <div id="MoisesCombo" class="flex justify-center items-center py-4 px-8 bg-[#E5E0DB]">
-            <h3 class="font-thin text-[#051D49]">Moisés & Combos</h3> 
+            <h3 class="font-thin text-[#051D49] md:text-2xl">Moisés & Combos</h3>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 ">
@@ -321,9 +324,9 @@
             </a>
         </div>
 
-         
+
         <div id="ConfortoBouncer" class="flex justify-center items-center py-4 px-8 bg-[#D8DFDF] ">
-            <h3 class="font-thin text-[#051D49]">Bebês conforto & Bouncer</h3> 
+            <h3 class="font-thin text-[#051D49] md:text-2xl">Bebês conforto & Bouncer</h3>
         </div>
 
 
@@ -450,8 +453,10 @@
     <!-- Floating Button -->
     <button class="fixed bottom-4 right-4 bg-[#051D49] text-white p-4 rounded-full shadow-lg hover:cursor-hand"
         id="backToTop" style="display: none;">
-        <i class="fas fa-arrow-up">
-        </i>
+        <div class="flex items-center justify-center">
+            <img src="./img/seta-cima.png" width="15">
+        </div>
+
     </button>
 
     <!-- Scripts -->

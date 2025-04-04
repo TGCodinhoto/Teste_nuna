@@ -6,11 +6,14 @@
     <title>
         Singular + Nuna - TRVL™
     </title>
-    <script src="https://cdn.tailwindcss.com">
+
+    <link rel="stylesheet" href="./dist/output.css">
+
+    <!-- <script src="https://cdn.tailwindcss.com">
     </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="" type="image/x-icon"> -->
 
     <style>
         @font-face {
@@ -44,7 +47,7 @@
         class="bg-[#051D49] flex flex-col justify-center items-center text-white p-10 min-h-[100px] md:min-h[300px]">
 
         <div class="w-full flex justify-center items-center">
-            <a href="#"><img class="w-[200px] md:w-[400px]" src="./img/nuna_logo branco.png" alt="Logo Nuna"></a>
+            <a href="./index.html"><img class="w-[200px] md:w-[400px]" src="./img/nuna_logo branco.png" alt="Logo Nuna"></a>
         </div>
 
         <!-- Navbar -->
@@ -61,7 +64,7 @@
             <a href="./index.html#carrinho"
                 class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
                 <div class="flex flex-col items-center justify-center">
-                    <img src="./img/icons/carrinho-de-bebe (1).png" class="w-[24px] md:w-[32px]" alt="">
+                    <img src="./img/icons/carrinho-de-crianca.png" class="w-[24px] md:w-[32px]" alt="">
                     <div class="mt-1">Carrinhos</div>
                 </div>
             </a>
@@ -85,7 +88,7 @@
             <a href="./index.html#ConfortoBouncer"
                 class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
                 <div class="flex flex-col items-center justify-center ">
-                    <img src="./img/icons/carrinho-de-crianca.png" class="w-[24px] md:w-[32px]" alt="">
+                    <img src="./img/icons/carrinho-de-bebe (3).png" class="w-[24px] md:w-[32px]" alt="">
                     <div class="mt-1 whitespace-nowrap">Bebês Conforto</div>
                 </div>
             </a>
@@ -93,7 +96,7 @@
             <a href="./index.html#ConfortoBouncer"
                 class="relative text-white transition-all duration-300 ease-in-out group hover:scale-[1.1]">
                 <div class="flex flex-col items-center justify-center ">
-                    <img src="./img/icons/carrinho-de-bebe (3).png" class="w-[24px] md:w-[32px]" alt="">
+                    <img src="./img/icons/bouncer (1).png" class="w-[24px] md:w-[32px]" alt="">
                     <div class="mt-1 whitespace-nowrap">Bouncers</div>
                 </div>
             </a>
@@ -116,8 +119,7 @@
                         <button
                             class="absolute left-7 top-1/2 transform -translate-y-1/2 bg-gray-800 opacity-80 text-white p-2 rounded-full"
                             id="prevButton">
-                            <i class="fas fa-chevron-left">
-                            </i>
+                            <img src="./img/seta-esquerda.png" alt="Seta Direita" width="15">
                         </button>
                         <div class="carousel">
                             <img alt="Imagem adicional 2 do produto" class="w-64 h-40 object-cover rounded-lg mr-2"
@@ -140,8 +142,7 @@
                         <button
                             class="absolute right-7 top-1/2 transform -translate-y-1/2 bg-gray-800 opacity-80 text-white p-2 rounded-full"
                             id="nextButton">
-                            <i class="fas fa-chevron-right">
-                            </i>
+                            <img src="./img/seta-direita.png" alt="Seta Direita" width="15">
                         </button>
                     </div>
 
@@ -193,11 +194,16 @@
                         <h3 class="text-lg font-semibold text-[#051D49] border-b-2 border-b-[#051D49]">Ficha Técnica
                             Carrinho TRVL™</h3>
                         <ul class="list-disc list-inside text-gray-800 mt-2 text-justify">
-                            <p><span class="font-bold">Peso Líquido: </span><span class="font-semibold">6,9 kg</span></p>
-                            <p><span class="font-bold">Peso Líquido (sem barra de apoio): </span><span class="font-semibold">6,6 kg</span> </p>
-                            <p><span class="font-bold">Aberto: </span><span class="font-semibold">C 88 cm × L 52 cm × A 111 cm</span></p>
-                            <p><span class="font-bold">Fechado: </span><span class="font-semibold">C 35 cm × L 52 cm × A 72 cm</span></p>
-                            <p><span class="font-bold">Medidas caixa:</span><span class="font-semibold"> C 31,6 cm × L 65,9 cm × A 48 cm</span> </p>
+                            <p><span class="font-bold">Peso Líquido: </span><span class="font-semibold">6,9 kg</span>
+                            </p>
+                            <p><span class="font-bold">Peso Líquido (sem barra de apoio): </span><span
+                                    class="font-semibold">6,6 kg</span> </p>
+                            <p><span class="font-bold">Aberto: </span><span class="font-semibold">C 88 cm × L 52 cm × A
+                                    111 cm</span></p>
+                            <p><span class="font-bold">Fechado: </span><span class="font-semibold">C 35 cm × L 52 cm × A
+                                    72 cm</span></p>
+                            <p><span class="font-bold">Medidas caixa:</span><span class="font-semibold"> C 31,6 cm × L
+                                    65,9 cm × A 48 cm</span> </p>
                             <p class="font-bold">Desde o nascimento até 22 kg</p>
                         </ul>
                     </div>
@@ -258,8 +264,10 @@
         <!-- Floating Button -->
         <button class="fixed bottom-4 right-4 bg-[#051D49] text-white p-4 rounded-full shadow-lg hover:cursor-hand"
             id="backToTop" style="display: none;">
-            <i class="fas fa-arrow-up">
-            </i>
+            <div class="flex items-center justify-center">
+                <img src="./img/seta-cima.png" width="15">
+            </div>
+
         </button>
 
 
