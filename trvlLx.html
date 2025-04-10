@@ -7,13 +7,13 @@
         Singular + Nuna - TRVL™LX
     </title>
 
-    <link rel="stylesheet" href="./dist/output.css">
+    <!-- <link rel="stylesheet" href="./dist/output.css"> -->
 
-    <!-- <script src="https://cdn.tailwindcss.com">
+    <script src="https://cdn.tailwindcss.com">
     </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
-    <link rel="shortcut icon" href="" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
 
     <style>
         @font-face {
@@ -107,14 +107,15 @@
 
     <main>
 
-        <section class="container mx-auto flex justify-center max-w-[600px] p-4">
+        <section class="flex p-6">
 
-            <div class="mx-auto my-6 bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="md:p-14 bg-white rounded-lg shadow-lg overflow-hidden md:flex">
 
-                <div id="mainImage">
+                <div id="mainImage" class="md:w-1/2 flex flex-col justify-center items-center">
                     <img src="./img/TRVLLX_Cedar.png"
                         alt="Imagem do produto principal, mostrando um item de e-commerce em destaque"
-                        class="object-cover">
+                        class="object-cover"
+                        width="600">
 
                     <div class="relative p-6">
                         <button
@@ -152,7 +153,8 @@
 
                 </div>
 
-                <div class="p-6">
+                <!-- Direito -->
+                <div class="md:w-1/2">
                     <h2 class="text-xl font-bold text-[#051D49]" id="productName">
                         TRVL™LX - Bege Cedar
                     </h2>

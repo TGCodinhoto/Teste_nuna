@@ -107,117 +107,87 @@
 
     <main>
 
-        <section class="container mx-auto flex justify-center max-w-[600px] p-4">
+        <section class="flex p-6">
 
-            <div class="mx-auto my-6 bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="md:p-14 bg-white rounded-lg shadow-lg overflow-hidden md:flex">
 
-                <div id="mainImage">
-                    <img src="./img/" alt="Imagem do produto principal, mostrando um item de e-commerce em destaque"
-                        class="object-cover">
+                <div id="mainImage" class="md:w-1/2 flex flex-col justify-center items-center">
+                    <img src="./img/Combo.png" alt="Imagem do produto principal, mostrando um item de e-commerce em destaque"
+                        class="object-cover" width="800
+                    ">
+                </div>
+                <!-- Direito -->
+                <div class="md:w-1/2">
+                    <h2 class="text-xl font-bold text-[#051D49]" id="productName">
+                        combo™demi grow - Cinza Threaded
+                    </h2>
+                    <div class="mt-4">
+                        <h3 class="text-lg font-semibold text-[#051D49]">Variações de Cores </h3>
+                        <div class="flex space-x-2 mt-2">
 
-                    <!-- <div class="relative p-6">
-                        <button
-                            class="absolute left-7 top-1/2 transform -translate-y-1/2 bg-gray-800 opacity-80 text-white p-2 rounded-full"
-                            id="prevButton">
-                            <img src="./img/seta-esquerda.png" alt="Seta Direita" width="15">
-                        </button>
-                        <div class="carousel">
-                            <img alt="Imagem adicional 2 do produto" class="w-64 h-40 object-cover rounded-lg mr-2"
-                                height="400" src="./img/Nuna_PIPAnext_Riveted_Overhead_HR_1_GL_Web.png" width="600" />
-                            <img alt="Imagem adicional 4 do produto" class="w-64 h-40 object-cover rounded-lg mr-2"
-                                height="400" src="./img/Nuna_PIPAnext_Riveted_onbase_BACK_GL_Web.png" width="600" />
-                            <img alt="Imagem adicional 4 do produto" class="w-64 h-40 object-cover rounded-lg mr-2"
-                                height="400" src="./img/Nuna_PIPAnext_Riveted_PeekABoo_GL_Web.png" width="600" />
-                            <img alt="Imagem adicional 1 do produto" class="w-64 h-40 object-cover rounded-lg mr-2"
-                                height="400" src="./img/Nuna_PIPAnext_Riveted_Profile_GL_Web.png" width="600" />
-                            <img alt="Imagem adicional 1 do produto" class="w-64 h-40 object-cover rounded-lg mr-2"
-                                height="400" src="./img/Nuna_PIPAnext_Riveted_Profile_Vent_GL_Web.png" width="600" />
-                            <img alt="Imagem adicional 1 do produto" class="w-64 h-40 object-cover rounded-lg mr-2"
-                                height="400" src="./img/grid/Pipa.jpg" width="600" />
-                            <img alt="Imagem adicional 1 do produto" class="w-64 h-40 object-cover rounded-lg mr-2"
-                                height="400" src="./img/PIPA next lifestyle.jpg" width="600" />
-                            
-                        <button
-                            class="absolute right-7 top-1/2 transform -translate-y-1/2 bg-gray-800 opacity-80 text-white p-2 rounded-full"
-                            id="nextButton">
-                            <img src="./img/seta-direita.png" alt="Seta Direita" width="15">
-                        </button>
+                            <div>
+                                <div alt="Variação de cor vermelha do produto"
+                                    class="w-10 h-10 bg-[#2C2828] rounded-full border border-gray-300 cursor-pointer"
+                                    onclick="changeImage('./img/Combo.png', 'combo™demi grow - Cinza Threaded')"
+                                    width="50" height="50">
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
 
-                </div> -->
+                    <div class="mt-4">
+                        <h3 class="text-lg font-semibold text-[#051D49] border-b-2 border-b-[#051D49]">Materiais
+                        </h3>
+                        <p class="text-gray-600 mt-2">Plástico, metais, madeira e tecido</span></p>
+                    </div>
 
-                    <div class="p-6">
-                        <h2 class="text-xl font-bold text-[#051D49]" id="productName">
-                            combo™demi grow - Cinza Threaded
-                        </h2>
-                        <div class="mt-4">
-                            <h3 class="text-lg font-semibold text-[#051D49]">Variações de Cores </h3>
-                            <div class="flex space-x-2 mt-2">
+                    <div class="mt-4 text-justify">
+                        <h3 class="text-lg font-semibold text-[#051D49] border-b-2 border-b-[#051D49]">Ficha Técnica
+                            combo™demi grow (Carrinho + Moisés)
+                        </h3>
+                        <ul class="list-disc list-inside text-gray-800 mt-2 text-justify">
+                            <p><span class="font-bold">Peso Bruto (kg): </span><span class="font-semibold">24,10
+                                    kg</span></p>
+                            <p><span class="font-bold">Peso Líquido carrinho (kg): </span><span
+                                    class="font-semibold">19,00 kg</span></p>
+                            <p><span class="font-bold">Peso Líquido moisés (kg): </span><span class="font-semibold">5,40
+                                    kg</span></p>
+                            <p><span class="font-bold">Medidas da caixa combo(cm): </span><span class="font-semibold">C
+                                    62 x L 54,80 x A 80 cm</span></p>
+                            <p><span class="font-bold">Do nascimento até 22 kg</span></p>
+                        </ul>
+                    </div>
 
-                                <div>
-                                    <div alt="Variação de cor vermelha do produto"
-                                        class="w-10 h-10 bg-[#2C2828] rounded-full border border-gray-300 cursor-pointer"
-                                        onclick="changeImage('./img/Nuna_Combo MIXXnext_Carrycot_Riveted_2023_Angle_FD_GL_web.png', 'combo™mixx next - Cinza Mineral + Preto Riveted')"
-                                        width="50" height="50">
-                                    </div>
-                                </div>
+                    <div class="leading-relaxed text-justify mt-4">
+                        <h3 class="mt-2 text-lg font-semibold text-[#051D49] border-b-2 border-b-[#051D49]">
+                            Descrição
+                        </h3>
+                        <p class="text-gray-600 mt-2 ">
+                            Combo Demi Grow com Moisés
+                            Características do Produto:
+                            Uso desde 6 meses até 15kg: Ideal para acompanhar o crescimento do seu bebê,
+                            proporcionando segurança e conforto desde os primeiros dias até os primeiros anos.
+                            Capota com proteção UV e peekaboo: Protege seu bebê dos raios solares nocivos enquanto
+                            permite uma fácil visualização através da janela peekaboo.
+                            Cinto de 5 pontos: Garante máxima segurança, mantendo seu bebê firmemente preso durante
+                            todos os passeios.
+                            Rodas pneumáticas: Oferecem uma condução suave e estável em diferentes tipos de terreno.
+                            Assento removível da estrutura: Flexibilidade para usar o moisés ou o assento de acordo
+                            com a sua necessidade.
+                            Compatibilidade sem adaptadores: O moisés pode ser acoplado diretamente à estrutura do
+                            carrinho, facilitando a transição.
+                            Barra de proteção em couro ecológico: Além de adicionar um toque de elegância, oferece
+                            durabilidade e fácil limpeza.
+                            O Combo Demi Grow com Moisés é a escolha perfeita para pais que procuram praticidade,
+                            estilo e segurança em um único produto. Garanta já o seu e proporcione o melhor para o
+                            seu bebê desde o nascimento!
+                        </p>
 
-                            </div>
-                        </div>
-
-                        <div class="mt-4">
-                            <h3 class="text-lg font-semibold text-[#051D49] border-b-2 border-b-[#051D49]">Materiais
-                            </h3>
-                            <p class="text-gray-600 mt-2">Plástico, metais, madeira e tecido</span></p>
-                        </div>
-
-                        <div class="mt-4 text-justify">
-                            <h3 class="text-lg font-semibold text-[#051D49] border-b-2 border-b-[#051D49]">Ficha Técnica combo™demi grow (Carrinho + Moisés) 
-                            </h3>
-                            <ul class="list-disc list-inside text-gray-800 mt-2 text-justify">
-                                <p><span class="font-bold">Peso Bruto (kg): </span><span class="font-semibold">24,10
-                                        kg</span></p>
-                                <p><span class="font-bold">Peso Líquido carrinho (kg): </span><span
-                                        class="font-semibold">19,00 kg</span></p>
-                                <p><span class="font-bold">Peso Líquido moisés (kg): </span><span
-                                        class="font-semibold">5,40 kg</span></p>
-                                <p><span class="font-bold">Medidas da caixa combo(cm): </span><span
-                                        class="font-semibold">C 62 x L 54,80 x A 80 cm</span></p>
-                                <p><span class="font-bold">Do nascimento até 22 kg</span></p>
-                            </ul>
-                        </div>
-
-                        <div class="leading-relaxed text-justify mt-4">
-                            <h3 class="mt-2 text-lg font-semibold text-[#051D49] border-b-2 border-b-[#051D49]">
-                                Descrição
-                            </h3>
-                            <p class="text-gray-600 mt-2 ">
-
-
-
-                                Combo Demi Grow com Moisés
-                                Características do Produto:
-                                Uso desde 6 meses até 15kg: Ideal para acompanhar o crescimento do seu bebê,
-                                proporcionando segurança e conforto desde os primeiros dias até os primeiros anos.
-                                Capota com proteção UV e peekaboo: Protege seu bebê dos raios solares nocivos enquanto
-                                permite uma fácil visualização através da janela peekaboo.
-                                Cinto de 5 pontos: Garante máxima segurança, mantendo seu bebê firmemente preso durante
-                                todos os passeios.
-                                Rodas pneumáticas: Oferecem uma condução suave e estável em diferentes tipos de terreno.
-                                Assento removível da estrutura: Flexibilidade para usar o moisés ou o assento de acordo
-                                com a sua necessidade.
-                                Compatibilidade sem adaptadores: O moisés pode ser acoplado diretamente à estrutura do
-                                carrinho, facilitando a transição.
-                                Barra de proteção em couro ecológico: Além de adicionar um toque de elegância, oferece
-                                durabilidade e fácil limpeza.
-                                O Combo Demi Grow com Moisés é a escolha perfeita para pais que procuram praticidade,
-                                estilo e segurança em um único produto. Garanta já o seu e proporcione o melhor para o
-                                seu bebê desde o nascimento!
-                            </p>
-
-                        </div>
                     </div>
                 </div>
+
+            </div>
 
         </section>
 
